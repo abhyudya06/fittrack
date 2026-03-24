@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    
+</head>
+<body>
+
+<header class="navbar">
+    <h1>FitTrack</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Feedback</a>
+    </nav>
+</header>
+
+<section class="contact">
+    <h2>Feedback Form</h2>
+
+    <form onsubmit="handleForm(event)">
+
+        <input type="text" name="name" placeholder="Enter your name" required>
+
+        <input type="email" name="email" placeholder="Enter your email" required>
+
+        <select name="workout">
+            <option>Gym</option>
+            <option>Yoga</option>
+            <option>Cardio</option>
+        </select>
+
+        <textarea name="feedback" placeholder="Your feedback..."></textarea>
+
+        <button type="submit">Submit Feedback</button>
+
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 FitTrack Gym</p>
+</footer>
+<button class="btn btn-info" type="submit">Submit Feedback</button>
+</body>
+</html>

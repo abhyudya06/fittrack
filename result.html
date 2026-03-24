@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Submission Successful</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="contact">
+    <h2>✅ Submission Successful</h2>
+
+    <p><strong>Name:</strong> <span id="name"></span></p>
+    <p><strong>Email:</strong> <span id="email"></span></p>
+    <p><strong>Workout:</strong> <span id="workout"></span></p>
+    <p><strong>Feedback:</strong> <span id="feedback"></span></p>
+
+    <br>
+    <a href="index.html" class="btn">Go Back Home</a>
+</div>
+
+<script>
+let data = JSON.parse(localStorage.getItem("fitnessData"));
+
+if (data) {
+    document.getElementById("name").innerText = data.name;
+    document.getElementById("email").innerText = data.email;
+    document.getElementById("workout").innerText = data.workout;
+    document.getElementById("feedback").innerText = data.feedback;
+}
+</script>
+
+</body>
+</html>
